@@ -9,10 +9,14 @@ h1{
     font-size: 50px;
 }
 
-img{
+.peter-klaven {
     height: 150px;
     width: 150px;
 }
+
+.margins-borders-padding {
+  height: 340px;
+  width: 455px;
 
 .myButton {
 	box-shadow: 0px 10px 14px -7px #3e7327;
@@ -66,4 +70,4 @@ img{
     background-color: #4CAF50;
     color: white;
   }
-
+  
