@@ -6,7 +6,7 @@
 
 :root{
 
-    /*   Theme Colors   */
+    /*    Theme Colors    */
 
     --text-gray: #3f4954;
     --text-light: #686666da;
@@ -149,7 +149,7 @@ p{
 /* -------------- Main Section Styling -------------------- */
 
 main .site-title{
-    background: url('./assets/Images/pic1.jpg');
+    background: url('./assets/Images/pic4.jpg');
     background-size: cover;
     height: 88.8vh;
     display: flex;
@@ -178,3 +178,61 @@ main .site-title .btn:hover{
     color: var(--white)
 }
 
+
+/* Left Buffer */
+
+main .left-about-section {
+    float:left;
+    width: 15%;
+}
+
+/* -------------- About Page Section Styling -------------------- */
+
+    .about-title {
+    display: flex;
+    justify-content: flex-start;
+    text-align: top;
+    float: left;
+    width: 70%;
+}
+
+main .about-title .about-background{
+    padding: 2rem;
+    text-align: center;
+    text-align: top;
+    color: var(--text-gray)
+}
+
+main .about-title h1, h3{
+    margin: .3rem;
+    /* text-align: left; */
+}
+
+main .about-title p{
+    margin: .3rem;
+    display: inline;
+    text-align: left;
+}
+
+/* Right Buffer */
+
+main .right-about-section {
+    float:left;
+    width: 15%;
+}
+
+/* Photo of Me */
+
+#about-me-image {
+    float: left;
+}
+
+.pro-photo {
+    padding: 1rem;
+    width: 15%;
+    border-radius: 30%;
+}
+
+#about-me-paragraph {
+    float: left;
+}
