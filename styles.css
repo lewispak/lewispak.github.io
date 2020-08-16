@@ -1,7 +1,101 @@
+.html .body{
+    margin: 0%; 
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+
+    /*   Theme Colors   */
+
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight-green: #104f55;
+
+    /*   Gradient Colors   */
+
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+
+    /*   Theme Font-Family   */
+
+    --Abel: 'Abel', consolas;
+    --Anton: 'Anton', consolas;
+    --Josefin: 'Josefin', consolas;
+    --Lexend: 'Lexend', consolas;
+    --Livvic: 'Livvic', consolas;
+}
+
+/*----------Global Classes----------*/
+
+a{
+    text-decoration: none;
+    color: var(--text-gray)
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer; 
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: var(--text-gray)
+}
+
+p{
+    font-family: var(--Livvic);
+    color: var(--text-light)
+}
+
+
+
+/* -------------- All Styling Menu-------------------- */
+
 * {
     margin: 0;
     padding: 0;
 }
+
+
+/* -------------- Navbar Styling -------------------- */
 
 .container {
     width: 90%;
@@ -51,3 +145,36 @@
 .menu li a:hover {
     color: #fff
 }
+
+/* -------------- Main Section Styling -------------------- */
+
+main .site-title{
+    background: url('./assets/Images/pic1.jpg');
+    background-size: cover;
+    height: 88.8vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white)
+}
+
+main .site-title h1, h3{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: #892BA4;
+    color: white;
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border:1px solid var(--white);
+    color: var(--white)
+}
+
