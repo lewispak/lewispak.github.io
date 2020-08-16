@@ -47,6 +47,14 @@ a{
 
 ul{
     list-style-type: none;
+    font-family: var(--Livvic);
+    color: var(--text-light);
+}
+
+li {
+    font-family: var(--Livvic);
+    color: var(--text-light);
+
 }
 
 h1{
@@ -293,5 +301,12 @@ main .right-about-section {
     font-size: 2rem;
     color: var(--text-gray);
 }
+
+/* -------------- Contact Page Section Styling -------------------- */
+
+.about-me-li {
+    padding: .3rem 1rem;
+}
+
 
 
