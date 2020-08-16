@@ -41,6 +41,10 @@ a{
     flex-wrap: wrap;
 }
 
+.divider {
+    margin: 1rem 0 1rem 0;
+}
+
 ul{
     list-style-type: none;
 }
@@ -48,10 +52,13 @@ ul{
 h1{
     font-family: var(--Lexend);
     font-size: 2.5rem;
+    color: var(--text-gray) #3f4954;
 }
 
 h2{
     font-family: var(--Lexend);
+    font-size: 2rem;
+    color: var(--text-gray) #3f4954;
 }
 
 h3{
@@ -228,11 +235,63 @@ main .right-about-section {
 }
 
 .pro-photo {
-    padding: 1rem;
-    width: 15%;
-    border-radius: 30%;
+    padding: .7rem;
+    width: 25%;
 }
 
 #about-me-paragraph {
     float: left;
 }
+
+/* -------------- Blog Page Section Styling -------------------- */
+
+.left-about-section {
+    float: left;
+    width: 10%;
+}
+
+.blog-content-section {
+    float: left;
+    width: 45%;
+}
+
+.blog-header-h1 {
+    color: var(--text-gray);
+    font-size: 2.5rem;
+    color: #892BA4;
+}
+
+.blog-header-h2 {
+    margin: .7rem 0;
+    color: var(--text-gray);
+    font-size: 2rem;
+    color: var(--text-gray);
+}
+
+.author-name {
+    color: var(--text-gray);
+    font-weight: bold;
+    margin: .3rem 0;
+}
+
+.sign-off-signature {
+    color: var(--text-gray);
+    font-weight: bold;
+    margin: 1rem 0 1rem 0;
+}
+
+/* -------------- Works Page Section Styling -------------------- */
+
+.works-image {
+    width: 50%;
+    margin: 1rem 0 1rem 0;
+}
+
+.works-header-h2 {
+    margin: 1rem 0 0 0;
+    color: var(--text-gray);
+    font-size: 2rem;
+    color: var(--text-gray);
+}
+
+
