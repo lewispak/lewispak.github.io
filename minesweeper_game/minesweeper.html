@@ -2,38 +2,93 @@
 <html>
 
 <head>
-    <title>Minesweeper</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./minesweeper.css">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/business-image/IsoCriso23 Favicon (500x500).png" type="image/x-icon">
+
+    <!-- Site Title -->
+    <title>Minesweeper</title>
+
+    <!-- Minesweeper Styling -->
+    <link rel="stylesheet" href="./minesweeper.css">
+
+     <!-- Styling -->
+     <link rel="stylesheet" href="../styles.css">
+
+     
     <script src="./lib/tests.js"></script>
+
     <script src="./lib/lib.js"></script>
-    <link rel="shortcut icon" href="#">
+
     </source>
 </head>
 
 <body>
-    <div id="notes">
-        <h1>Minesweeper</h1>
+<!-- Navigation Bar -->
 
-        <h3>Objective:</h3>
-        <p>You win when all mines are flagged and all other cells have been revealed.</p>
-        <br>
-        <h3>How To Play:</h3>
-        <p>1. Left click to reveal cell.</p>
-        <p>2. Right click to flag cell.</p>
+<div class="navbar">
+
+    <div class="container">
+
+        <div class="logo-div">
+            <a href="https://lewispak.github.io"><img src="../assets/business-image/IsoCriso23 Logo (250x50) .png" alt="IsoCriso23" class="logo"></a>
+        </div>
+
+        <div class="navbar-links">
+            <ul class="menu">
+                <li><a href="https://lewispak.github.io/index.html">Home</a></li>
+                <li><a href="https://lewispak.github.io/pages/about.html">About</a></li>
+                <li><a href="https://lewispak.github.io/pages/blog.html">Blog</a></li>
+                <li><a href="https://lewispak.github.io/pages/works.html">Works</a></li>
+                <li><a href="https://lewispak.github.io/pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
     </div>
+
+</div>
+
+<!-- Minsweeper Game Section -->
+
+<div id="minesweeper-section">
+
     <div id="message"></div>
+
+        <div id="minesweeper-notes">
+
+            <h1>Minesweeper</h1>
+
+            <h3>Objective:</h3>
+            <p>You win when all mines are flagged and all other cells have been revealed.</p>
+            <br>
+            <h3>How To Play:</h3>
+            <p>1. Left click to reveal cell.</p>
+            <p>2. Right click to flag cell.</p>
+
+        </div>
+
+    </div>
+
     <div id="controls">
         <button onclick="decreaseCells()">-1 Difficulty</button>
         <button onclick="increaseCells()">+1 Difficulty</button>
         <button onclick="restartGame()">Restart Game</button>
     </div>
-    <div class="board"></div>
-    <audio id="revealSoundAudio" src="./audio/click.wav"></audio>
-    <audio id="revealBombAudio" src="./audio/incorrect.wav"></audio>
-    <audio id="flagSoundAudio" src="./audio/correct.wav"></audio>
-    <audio id="unflagCellAudio" src="sounds/unflag.wav"></audio>
-    <audio id="winAudio" src="./audio/win.wav"></audio>
-    <script src="./minesweeper.js"></script>
+        
+    <div class="board">
+        <audio id="revealSoundAudio" src="./audio/click.wav"></audio>
+        <audio id="revealBombAudio" src="./audio/incorrect.wav"></audio>
+        <audio id="flagSoundAudio" src="./audio/correct.wav"></audio>
+        <audio id="unflagCellAudio" src="sounds/unflag.wav"></audio>
+        <audio id="winAudio" src="./audio/win.wav"></audio>
+    </div>
+</div>
+
+<script src="./minesweeper.js"></script>
+
 </body>
