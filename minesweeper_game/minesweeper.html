@@ -74,21 +74,23 @@
 
     </div>
 
-    <div id="controls"></div>
-    
+    <div id="controls">
+       
         <button onclick="decreaseCells()">-1 Difficulty</button>
         <button onclick="increaseCells()">+1 Difficulty</button>
         <button onclick="restartGame()">Restart Game</button>
+
+    </div>
     
         
-    
+    <div class="board">
         <audio id="revealSoundAudio" src="./audio/click.wav"></audio>
         <audio id="revealBombAudio" src="./audio/incorrect.wav"></audio>
         <audio id="flagSoundAudio" src="./audio/correct.wav"></audio>
         <audio id="unflagCellAudio" src="sounds/unflag.wav"></audio>
         <audio id="winAudio" src="./audio/win.wav"></audio>
 
-        <div class="board"></div>
+    </div>
 </div>
 
 <script src="./minesweeper.js"></script>
