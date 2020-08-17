@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minesweeper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./minesweeper.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="./lib/tests.js"></script>
+    <script src="./lib/lib.js"></script>
+    <link rel="shortcut icon" href="#">
+    </source>
+</head>
+
+<body>
+    <div id="notes">
+        <h1>Minesweeper</h1>
+
+        <h3>Objective:</h3>
+        <p>You win when all mines are flagged and all other cells have been revealed.</p>
+        <br>
+        <h3>How To Play:</h3>
+        <p>1. Left click to reveal cell.</p>
+        <p>2. Right click to flag cell.</p>
+    </div>
+    <div id="message"></div>
+    <div id="controls">
+        <button onclick="decreaseCells()">-1 Difficulty</button>
+        <button onclick="increaseCells()">+1 Difficulty</button>
+        <button onclick="restartGame()">Restart Game</button>
+    </div>
+    <div class="board"></div>
+    <audio id="revealSoundAudio" src="./audio/click.wav"></audio>
+    <audio id="revealBombAudio" src="./audio/incorrect.wav"></audio>
+    <audio id="flagSoundAudio" src="./audio/correct.wav"></audio>
+    <audio id="unflagCellAudio" src="sounds/unflag.wav"></audio>
+    <audio id="winAudio" src="./audio/win.wav"></audio>
+    <script src="./minesweeper.js"></script>
+</body>
