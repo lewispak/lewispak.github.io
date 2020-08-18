@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+    <title>JAVASCRIPT CARNIVAL: Dress The Clown!</title>
+    <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./dress-the-clown.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <h2>JAVASCRIPT CARNIVAL: Dress The Clown!</h2>
+    <div id="controls">
+        <h3>
+            1) Use up/down keys to changing body part, left/right to change clothing</br></br>
+            2) Download preview on the right, remember to update it before downloading</br></br>
+            Changing: <span id="bodyPart">body</span>
+        </h3>
+    </div>
+
+    <div class="dress-a-parent" id="preview">
+        <img id='head' class="dress-an-image" src="./images/head1.png"> <br>
+        <img id='body' class="dress-an-image" src="./images/body1.png"> <br>
+        <img id='shoes' class="dress-an-image" src="./images/shoes1.png">
+        <div>
+            <canvas id="myCanvas" width="400" height="600"></canvas>
+            <div>
+                <a href="#" class="buttons" id="updater" onclick="updateCanvas()">Update!</a>
+                <a href="#" class="buttons" id="downloader" onclick="downloadImg()" download="image.png">Download!</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+    <script src="./dress-the-clown.js"></script>
+</body>
+
+</html>
