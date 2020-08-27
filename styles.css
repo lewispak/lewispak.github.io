@@ -166,6 +166,21 @@ p{
     color: #fff
 }
 
+.toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+
+}
+
+.toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
 /* -------------- Main Section Styling -------------------- */
 
 main .site-title{
@@ -314,4 +329,19 @@ main .right-about-section {
 }
 
 
+/* -----------Viewport less than or equal to 768px------------ */
 
+
+@media only screen and (max-width: 832px){
+    .navbar{
+        background: orange;   
+    }
+}
+
+/* -----------Viewport less than or equal to 320px------------ */
+
+@media only screen and (max-width: 320px){
+    .navbar{
+        background: pink;   
+    }
+}
