@@ -328,11 +328,19 @@ main .right-about-section {
     padding: .3rem 1rem;
 }
 
+/* -----------Viewport less than or equal to 1200px------------ */
+
+
+@media only screen and (max-width: 832px){
+    .navbar{
+        background: white;   
+    }
+}
 
 /* -----------Viewport less than or equal to 768px------------ */
 
 
-@media only screen and (max-width: 832px){
+@media only screen and (max-width: 768px){
     .navbar{
         background: orange;   
     }
